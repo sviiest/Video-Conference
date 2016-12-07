@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head
+<meta charset="utf-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Conference</title>
+<link rel="stylesheet" href="css/video.css" type="text/css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <br>
+  <center>
+    <div class="col-xs-4 col-xs-offset-4">
+      <input type="text" class="form-control" placeholder="Room ID" id="roomid">
+    </div>
+    <br>
+    <br>
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary" id="open">Open Room</button>
+      <button type="button" class="btn btn-primary" id="join">Join Room</button>
+      <hr>
+    </div>
+    <div id="local-videos-container">
+    </div>
+    <hr>
+    <div id="remote-videos-container">
+    </div>
+  </center>
+  <script src="https://rtcmulticonnection.herokuapp.com/dist/RTCMultiConnection.min.js"></script>
+  <script src="https://rtcmulticonnection.herokuapp.com/socket.io/socket.io.js"></script>
+  <script type="text/javascript" src="js/backend.js"></script>
+</body>
+</html>
